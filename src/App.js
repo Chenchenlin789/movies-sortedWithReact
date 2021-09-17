@@ -1,12 +1,17 @@
 import "./App.css";
-import Films from "./Components/FilmItem";
-import userData from "./Components/Data";
+import Data from "./components/Data";
+import Films from "./components/FilmItem";
+// import Change from "./components/DayNight"
+
 
 function App() {
+
+
   return (
     <div>
+    {/* <Change></Change> */}
       <Films> </Films>
-      <userData></userData>
+      <Data></Data>
     </div>
   );
 }

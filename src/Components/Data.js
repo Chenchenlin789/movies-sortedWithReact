@@ -78,7 +78,8 @@ let userData = [
 // uuidv4()
 
 //cc have to import react using imr in order to execute the cc
-class UserData extends React.Component {
+
+class Data extends React.Component {
   // haribo ist the state und somit die verbidung zu sort
   state = {
     haribo: userData,
@@ -100,7 +101,7 @@ class UserData extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="flex">
         <button onClick={this.check}>Sort</button>
         {this.state.haribo.map((data) => (
           <div key={data.id} className="userName">
@@ -114,4 +115,4 @@ class UserData extends React.Component {
   }
 }
 
-export default userData;
+export default Data;
