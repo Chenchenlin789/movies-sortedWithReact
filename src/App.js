@@ -1,5 +1,5 @@
 import "./App.css";
-import Data from "./components/Data";
+// import Data from "./components/Data";
 import Films from "./components/FilmItem";
 // import Change from "./components/DayNight"
 
@@ -11,7 +11,7 @@ function App() {
     <div>
     {/* <Change></Change> */}
       <Films> </Films>
-      <Data></Data>
+      {/* <Data></Data> */}
     </div>
   );
 }
