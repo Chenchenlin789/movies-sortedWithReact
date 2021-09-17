@@ -1,6 +1,15 @@
 .userName {
+  margin: 10px;
   border: 1px solid #fff;
-  width: 30%;
-  height: 80px;
+  width: 17%;
+  height: 350px;
   background: black;
+  color: white;
+  /* grid-template-columns: repeat(4, 40px);
+  grid-template-rows: repeat(10, 60px); */
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }

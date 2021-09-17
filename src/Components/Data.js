@@ -103,7 +103,7 @@ class UserData extends React.Component {
       <div>
         <button onClick={this.check}>Sort</button>
         {this.state.haribo.map((data) => (
-          <div key={data.id} className="userCard">
+          <div key={data.id} className="userName">
             <h1>{data.first_name} </h1>
             <p> {data.last_name} </p>
             <a href={`mailto:${data.email}`}> my email </a>

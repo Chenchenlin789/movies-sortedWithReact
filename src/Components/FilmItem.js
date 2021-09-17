@@ -28,22 +28,37 @@ class Films extends React.Component {
     this.setState({ library: sortedMoviesY });
   };
 
+  //sorting accroding to rating
+  sortRating = () => {
+    let sortedMoviesY = [...this.state.library];
+    sortedMoviesY.sort(function (a, b) {
+      return b.rate - a.rate;
+    });
+    console.log(sortedMoviesY);
+    this.setState({ library: sortedMoviesY });
+  };
+
   render() {
     return (
-      <div>
-        <button onClick={this.sortName}> sort names</button>
-        <button onClick={this.sortYear}> sort years</button>
+      <section>
+        <div>
+          <button onClick={this.sortName}> Sort by Name</button>
+          <button onClick={this.sortYear}> Sort by Years</button>
+          <button onClick={this.sortRating}> Best Rating</button>
+        </div>
+        {/* <div className="flex"> */}
         {this.state.library.map((elt) => (
-          <div key={elt.id} className="userCard">
+          <div key={elt.id} className="userName">
             <h1>{elt.title} </h1>
             <h2> {elt.year} </h2>
             <h4> {elt.director} </h4>
             <h3> {elt.duraction} </h3>
             <h3> {elt.genre} </h3>
-            <h2> {elt.rating} </h2>
+            <h2> {elt.rate} </h2>
           </div>
+          //  </div>
         ))}
-      </div>
+      </section>
     );
   }
 }
