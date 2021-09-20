@@ -1,4 +1,4 @@
-import movies from "./components/Filmdata";
+import movies from "./Components/Filmdata";
 import React from "react";
 import "./App.css";
 import { v4 as uuidv4 } from "uuid";
