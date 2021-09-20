@@ -1,6 +1,6 @@
 import "./App.css";
 // import Data from "./components/Data";
-import Films from "./components/FilmItem";
+import Films from "./components/Films";
 // import Change from "./components/DayNight"
 
 
